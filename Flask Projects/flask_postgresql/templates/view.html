@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Student</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <table border="1">
+        <tr>
+            <th>Registration Number</th>
+            <th>Name</th>
+            <th>Subject 1</th>
+            <th>Subject 2</th>
+        </tr>
+        <tr>
+            <td>{{ student[0] }}</td>  {# Assuming the first element is REGNUM #}
+            <td>{{ student[1] }}</td>  {# Assuming the second element is NAME #}
+            <td>{{ student[2] }}</td>  {# Assuming the third element is SUBJECT1 #}
+            <td>{{ student[3] }}</td>  {# Assuming the fourth element is SUBJECT2 #}
+        </tr>
+    </table>
+    <a href="{{ url_for('welcome') }}">Back to Welcome Page</a>
+</body>
+</html>
